@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Stack Sans Text, sans-serif;
+
+}
+
+body {
+
+  background-image: linear-gradient(to bottom left, rgb(98, 142, 223), rgb(199, 207, 245));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0;
+
+
+}
+
+.calculator {
+  width: 400px;
+  height: 585px;
+  margin: 50px auto;
+  padding: 35px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 10px 8px 7px 0px #110e0eeb;
+  overflow: hidden;
+  background-image: linear-gradient(to top left, #1f2224, rgb(80, 80, 82));
+
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+
+  .ac-btn {
+    grid-column: span 2;
+
+    &:hover {
+      background-color: #d95353;
+      color: rgb(53, 51, 49);
+    }
+  }
+
+  .equal {
+    grid-column: span 2;
+    background-color: #ff7d03;
+    padding: 20px;
+    font-size: 1.5em;
+    font: bolder;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #d88944;
+      color: rgb(53, 51, 49);
+    }
+  }
+
+  .btn {
+    box-shadow: 2px 3px 4px 3px #151616eb
+  }
+
+  .btn:not(:last-child) {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #615e5b;
+      color: rgb(53, 51, 49);
+    }
+  }
+}
+
+.calculator-screen {
+  width: 100%;
+  height: 115px;
+  border: none;
+  background-color: transparent;
+  text-align: right;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  .previous {
+    font-size: 1.5em;
+    color: #b5b5b5;
+    margin-bottom: 5px;
+  }
+
+  .current {
+    font-size: 2.2em;
+    color: #ffffff;
+
+  }
+}
